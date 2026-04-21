@@ -1,0 +1,12 @@
+[Unit]
+Description=Quotes API Service
+After=network.target
+
+[Service]
+User=nader
+WorkingDirectory=/usr/local/quotes-app
+ExecStart=/usr/bin/python3 -m uvicorn api.api:app --host 0.0.0.0 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
