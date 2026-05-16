@@ -1,0 +1,4 @@
+kafka-topics \
+--describe \
+--topic ecommerce_orders \
+--bootstrap-server kafka1:19092

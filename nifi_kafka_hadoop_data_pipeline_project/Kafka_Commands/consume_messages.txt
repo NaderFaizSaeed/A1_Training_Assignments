@@ -1,0 +1,4 @@
+kafka-console-consumer \
+--topic ecommerce_orders \
+--from-beginning \
+--bootstrap-server kafka1:19092
